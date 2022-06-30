@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+.rdrDateRangePickerWrapper {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+.rdrCalendarWrapper {
+  flex-grow: 1;
+}
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrDefinedRangesWrapper {
+  flex-basis: 1fr !important;
+}
+@media only screen and (max-width: 650px) {
+  .rdrDefinedRangesWrapper {
+    flex-grow: 1;
+  }
+  .rdrStaticRanges {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .rdrInputRanges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.cover {
+  background-color: #5047f5;
+  padding: 1rem;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.debt {
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem;
+
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+input[type="tel"] {
+  width: 100% !important;
+}
